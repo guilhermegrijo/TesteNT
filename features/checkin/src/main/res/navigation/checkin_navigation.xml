@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/checkin_navigation"
+    app:startDestination="@id/checkInFragment">
+
+    <dialog
+        android:id="@+id/checkInFragment"
+        android:name="com.br.guilherme.checkin.ui.CheckInFragment"
+        tools:layout="@layout/checkin_fragment"
+        android:label="CheckInFragment" >
+        <argument
+            android:name="event_id"
+            app:argType="string" />
+    </dialog>
+</navigation>

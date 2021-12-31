@@ -1,0 +1,17 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "TesteNT"
+include ':app'
+include ':appDesign'
+include ':data'
+include ':domain'
+include ':core'
+include ':features:events'
+include ':features:eventdetail'
+include ':features:checkin'
